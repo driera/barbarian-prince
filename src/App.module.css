@@ -1,8 +1,22 @@
 .app {
+  position: relative;
   display: grid;
   justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%;
-  padding: 20px 50px;
+  align-content: flex-start;
+  width: 800px;
+  max-width: 95%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid var(--darker-color);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    transform: skew(3deg);
+    border: 1px solid var(--darker-color)
+  }
 }
